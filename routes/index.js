@@ -9,5 +9,8 @@ console.log("routes");
 
 router.get('/',homeController.home);
 
+router.use('/users', require('./users'));
+//for any for the routes access from here
+
 
 module.exports = router;
